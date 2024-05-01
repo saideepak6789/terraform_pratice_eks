@@ -1,0 +1,16 @@
+#local terrafrom  folder
+.terraform/*
+
+#terrform state file
+*.tfstate
+*.tfstate.*
+
+#terraform variable files may include senstivity data
+#*.tfvars
+
+
+#terraform lock file
+.terraform.lock.hcl
+
+# terraform provider
+provider.tf
