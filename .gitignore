@@ -15,3 +15,4 @@
 # terraform provider
 provider.tf
 foreach/.terraform/*
+vpcmodule/.terraform/*
