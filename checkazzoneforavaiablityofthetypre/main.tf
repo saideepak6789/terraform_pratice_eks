@@ -58,6 +58,6 @@ resource "aws_instance" "myec2vm" {
   az => details.instance_types if length(details.instance_types) != 0 }))
   availability_zone = each.key # You can also use each.value because for list items each.key == each.value
   tags = {
-    "Name" = "For-Each-Demo-${each.key}"
+    "Name" = "For-Each-Demo-${each.value}"
   }
 }
